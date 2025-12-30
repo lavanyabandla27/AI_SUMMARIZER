@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ScholarLens | AI Research Insight Engine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <h1>ScholarLens</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#upload">Analyze</a>
+    <a href="#workflow">Workflow</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h2>Understand Research Papers Faster</h2>
+  <p>
+    ScholarLens converts complex academic PDFs into short,
+    meaningful summaries using AI-powered analysis.
+  </p>
+  <a href="#upload" class="btn">Start Now</a>
+</section>
+
+<!-- UPLOAD -->
+<section class="section" id="upload">
+  <h3>Upload Research Paper</h3>
+  <input type="file" id="pdfFile" accept="application/pdf" />
+  <button class="btn" onclick="generateSummary()">Generate Summary</button>
+
+  <div id="output" class="output hidden">
+    <h4>Generated Summary</h4>
+    <p id="summaryText">
+      This is a demo summary. AI backend can be integrated here
+      to generate real summaries from uploaded PDFs.
+    </p>
+  </div>
+</section>
+
+<!-- WORKFLOW -->
+<section class="section light" id="workflow">
+  <h3>How ScholarLens Works</h3>
+  <div class="grid">
+    <div class="card">📄 Upload PDF</div>
+    <div class="card">🔍 Extract Content</div>
+    <div class="card">🧠 AI Analysis</div>
+    <div class="card">📝 Summary Output</div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <h3>Key Features</h3>
+  <div class="grid">
+    <div class="card">✔ Academic PDF Support</div>
+    <div class="card">✔ AI-Based Summarization</div>
+    <div class="card">✔ Clean & Simple UI</div>
+    <div class="card">✔ Backend-Ready Design</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section stats">
+  <h3>Project Impact</h3>
+  <div class="grid">
+    <div class="card"><span class="counter" data-target="1200">0</span><br>Papers</div>
+    <div class="card"><span class="counter" data-target="4">0</span> sec<br>Avg Time</div>
+    <div class="card"><span class="counter" data-target="350">0</span><br>Users</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section light">
+  <h3>FAQs</h3>
+  <div class="faq">
+    <button onclick="toggleFaq(this)">Is this a real AI tool?</button>
+    <p>Currently this is a demo UI, but AI backend can be integrated easily.</p>
+
+    <button onclick="toggleFaq(this)">Which files are supported?</button>
+    <p>Only PDF research papers are supported.</p>
+
+    <button onclick="toggleFaq(this)">Who can use this?</button>
+    <p>Students, researchers, and academic professionals.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <h3>Get in Touch</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 ScholarLens | AI Research Insight Engine</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
